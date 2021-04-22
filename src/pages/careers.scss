@@ -1,0 +1,4 @@
+@import "../css/global.scss";
+
+// Owl Carousel 2 and Fancybox are not needed on this page.
+// Calendly fails with Sass, so we moved its import to contact.js.

@@ -1,0 +1,7 @@
+@import "../css/global.scss";
+
+// Oh, this is fun! Fancybox source includes unquoted env() functions that Sass
+// does not support, thus we can't @import fancybox here and instead import the
+// CSS from JS. https://stackoverflow.com/a/47439447/23566
+
+// Owl Carousel 2 and Calendly fail with Sass too, so we moved them to index.js.

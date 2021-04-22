@@ -1,0 +1,19 @@
+# Redirects are processed from top to bottom.
+
+# Redirect from the old 'career' to the new 'careers' page.
+/career.html /careers
+/career /careers
+/career/ /careers
+
+# Allow only certain logged-in users to access partner resources.
+# https://docs.netlify.com/visitor-access/role-based-access-control/#redirect-visitors-based-on-roles
+/partners.html /partners 200! Role=admin,partner
+/partners /partners 200! Role=admin,partner
+/partners/ /partners 200! Role=admin,partner
+
+# If the request was to partner resources, and they were not authenticated or
+# were not authorized (incorrect role), then this rule will be evaluated.
+# Redirect them to our login page.
+/partners.html /partners-login 401!
+/partners /partners-login 401!
+/partners/ /partners-login 401!
