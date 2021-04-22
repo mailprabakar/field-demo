@@ -1,0 +1,6 @@
+@import "../css/global.scss";
+
+// You might come here wanting to apply some CSS to the Netlify Identity
+// widget, e.g. hide the 'X' close button. Sorry, that won't work. Since the
+// widget loads as an iFrame sourced from a difference domain (origin), the
+// browser will not allow CSS changes to those elements from our app code.
